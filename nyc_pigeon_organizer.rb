@@ -1,4 +1,3 @@
-require "pry"
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_list = {}
@@ -7,8 +6,7 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         pigeon_list[name] = {} if pigeon_list[name].nil?
         pigeon_list[name][key1] = [] if pigeon_list[name][key1].nil?
-
-          pigeon_list[name][key1] += [key2.to_s]
+        pigeon_list[name][key1] += [key2.to_s]
       end
     end
   end
